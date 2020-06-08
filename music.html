@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="music.js"></script>
+</head>
+
+<body>
+    <div class="musicplayer">
+        <div class="cover">
+            cover
+        </div>
+        <div class="slider">
+            <!-- <span class="iconfont-slider">&#xe61c;</span> -->
+            <div class="time">00.00</div>
+            <div id="sliderwidth" onclick="sliderPositon(event)">
+                <img src="/icon/sliderdot.png" alt="nopic" id="iconfont-slider"></img>
+            </div>
+            <div class="time">00.00</div>
+        </div>
+        <div class="press">
+            <img src="/icon/musicplay.png" alt="nopic" onclick="musicPlay()">
+            <img src="/icon/musicpause.png" alt="nopic" onclick="musicPause()">
+            <img src="/icon/musicpre.png" alt="nopic" onclick="musicPre()">
+            <img src="/icon/musicnext.png" alt="nopic" onclick="musicNext()">
+            <!-- <span class="iconfont-press" onclick="musicPlay()">&#xe634;</span>
+            <span class="iconfont-press" onclick="musicPause()">&#xe638;</span>
+            <span class="iconfont-press" onclick="musicPre()">&#xe636;</span>
+            <span class="iconfont-press" onclick="musicNext()">&#xe637;</span> -->
+        </div>
+        <div class="list">
+            <ol class="listol" onmouseover="musicSrc()">
+            <!-- <ol class="listol" > -->
+                <li>intro</li>
+                <li>horse</li>
+                <li>夏恋</li>
+                <li>Hear Me Now</li>
+                <li>in the end</li>
+                <li>Pluto (Drop Tower Remix)</li>
+                <li>Puppy</li>
+            </ol>
+
+        </div>
+        <div class="lrc">song lrc</div>
+        <audio id="audio">
+            <source src="music/夏恋.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+</body>
+
+</html>

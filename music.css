@@ -1,0 +1,100 @@
+/* @font-face {
+    font-family: 'iconfont';
+    src: url('./iconfont/iconfont.eot');
+    src: url('./iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('./iconfont/iconfont.woff2') format('woff2'),
+        url('./iconfont/iconfont.woff') format('woff'),
+        url('./iconfont/iconfont.ttf') format('truetype'),
+        url('./iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont-press {
+    font-family: "iconfont" !important;
+    font-size: 50px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    border: 1px solid black;
+    
+} */
+/* .iconfont-slider{
+    font-family: "iconfont" !important;
+    font-size: 1px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+} */
+.press{
+    display: flex;       
+}
+.press>img{
+    width: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#iconfont-slider{
+    width: 1%;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    height: 1%;
+    position: relative;
+    /* left: 99%; */
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.musicplayer{
+    width: 80%;
+    height: auto;    
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.cover{
+    border: 1px solid black;
+}
+.slider{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: baseline;
+  
+}
+.slider>div:nth-child(1){
+    border: 1px solid black;
+    flex-grow: 1;
+}
+.slider>div:nth-child(2){
+    border: 1px solid black;
+    flex-grow: 5;
+    
+}
+
+.slider>div:nth-child(3){
+    border: 1px solid black;
+    flex-grow: 1;
+}
+.time{
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+.press{
+    border: 1px solid black;
+}
+.list{
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+}
+
+.lrc{
+    border: 1px solid black;
+
+}
